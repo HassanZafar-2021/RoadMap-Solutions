@@ -1,42 +1,14 @@
 # Single-Page-CV
 
-## Description
+Create a single-page HTML CV to showcase your career history
 
-A single page boilerplate resume template made with HTML only.
+## Requirements
 
-## Table of Contents (Optional)
+Semantic HTML: Use appropriate HTML tags to structure your CV.
+SEO Meta Tags: Include essential meta tags for SEO.
+Open Graph (OG) Tags: Add OG tags for better social media sharing.
+Favicon: Add a favicon for your CV page.
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+## Link
 
-## Installation
-
-Git Clone https://github.com/HassanZafar-2021/Single-Page-CV.git and run program via live server.
 https://roadmap.sh/projects/single-page-cv
-
-## Usage
-
-## Credits
-
-No collaborators.
-
-## License
-
-No License
-
-
-## Features
-
-- A structured Singe Page CV Page
-- See how each section of a resume is neatly organized and well written.
-
-## How to Contribute
-
-Fork and git clone repo and make pull request on your own branch with changes
-
-## Tests
-
-No tests needed.
