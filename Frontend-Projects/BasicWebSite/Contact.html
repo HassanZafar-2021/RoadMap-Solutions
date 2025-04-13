@@ -20,72 +20,77 @@
     <main>
       <h2>Contact</h2>
       <p>
-        Feel Free to Reach out to me by putting some of your contact info in
+        Feel free to reach out to me by putting some of your contact info in.
       </p>
 
-      <label for="firstName">Name</label>
-      <input
-        type="text"
-        id="firstName"
-        name="firstName"
-        required
-        placeholder="John"
-      />
-      <br />
+      <section id="Contact">
+        <form>
+          <label for="firstName">Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="John"
+          />
+          <br />
 
-      <label for="lastName">LastName</label>
-      <input
-        type="text"
-        id="lastName"
-        name="lastName"
-        required
-        placeholder="Doe"
-      />
-      <br />
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            placeholder="Doe"
+          />
+          <br />
 
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="adamSmith22@gmail.com"
-      />
-      <br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="adamSmith22@gmail.com"
+          />
+          <br />
 
-      <label for="phone">Phone</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        required
-        placeholder="123-456-7890"
-      />
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="123-456-7890"
+          />
+          <br />
 
-      <br />
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="4"
-        cols="50"
-        required
-      ></textarea>
-      <br />
-      <h2>Prefered way of being contact</h2>
-      <label for="email">Email</label>
-      <input type="radio" id="email" name="contact" value="email" />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br />
 
-      <label for="phone">Phone</label>
-      <input type="radio" id="phone" name="contact" value="phone" />
+          <h2>Preferred way of being contacted</h2>
+          <label for="contact-email">Email</label>
+          <input type="radio" id="contact-email" name="contact" value="email" />
 
-      <br>
-      <hr>
+          <label for="contact-phone">Phone</label>
+          <input type="radio" id="contact-phone" name="contact" value="phone" />
+          <br />
 
-      <button type="submit">Submit</button>
+          <hr />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer>
       <p>&copy; 2025 Hassan Zafar. All rights reserved.</p>
+    </footer>
   </body>
 </html>

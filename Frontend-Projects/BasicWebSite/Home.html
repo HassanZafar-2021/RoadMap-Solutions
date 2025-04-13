@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
@@ -12,81 +13,148 @@
       <p>Frontend Developer</p>
       <p>HTML only with proper layout, no styling</p>
     </header>
-    <aside>
-      <nav>
+
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Articles.html">Articles</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content-section">
+        <h2>Projects</h2>
         <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="Articles.html">Articles</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li>
+            <a href="https://github.com/HassanZafar-2021/SkyScript"
+              >SkyScript</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/HassanZafar-2021/EnergyConsumptionCalculator"
+              >EnergyConsumptionCalculator</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/HassanZafar-2021/AskGemini"
+              >AskGemini</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/HassanZafar-2021/Vocal-Vision"
+              >Vocal-Vision</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/HassanZafar-2021/GameSeek">GameSeek</a>
+          </li>
         </ul>
-      </nav>
-    </aside>
-    <hr />
-    <section id="Projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/HassanZafar-2021/SkyScript">SkyScript</a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/HassanZafar-2021/EnergyConsumptionCalculator"
-            >EnergyConsumptionCalculator</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/HassanZafar-2021/AskGemini">AskGemini</a>
-        </li>
-        <li>
-          <a href="https://github.com/HassanZafar-2021/Vocal-Vision"
-            >Vocal-Vision</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/HassanZafar-2021/GameSeek">GameSeek</a>
-        </li>
-      </ul>
-    </section>
-    <hr />
-    <section id="Work Experience">
-      <h2>Work Experience</h2>
-      <h4>roadmap.sh</h4>
-      <p>Solved all the frontend projects</p>
-      <a href="https://github.com/HassanZafar-2021">Visit my Profile</a>
-    </section>
-    <hr />
-    <section id="Education">
-      <p>
-        Graduated with a 3.2 out of 4 GPA. Won 2 Hackathons. Took 3 comp sci
-        classes
-      </p>
+      </section>
 
-      <h4>Courses I took</h4>
-      <ul>
-        <li>Data Structures & Algorithms</li>
-        <li>Object Oriented Programming</li>
-        <li>Video Game Design</li>
-        <li>Business Information Systems</li>
-      </ul>
-    </section>
-    <hr />
-    <section id="Reviews">
-      <h3>Reviews from my peers</h3>
-      <p>
-        "Hassan is a great team player and always willing to help others." - Tim
-        Phillips
-      </p>
-      <p>
-        "His attention to detail is impressive and he consistently delivers
-        high-quality work." - John Doe
-      </p>
-      <p>
-        "Hassan's problem-solving skills are top-notch and he approaches
-        challenges with a positive attitude." - Alex Smith
-      </p>
-    </section>
+      <section class="content-section">
+        <h2>Work Experience</h2>
+        <h4>roadmap.sh</h4>
+        <p>Solved all the frontend projects</p>
+        <a href="https://github.com/HassanZafar-2021">Visit my Profile</a>
+      </section>
 
-    <footer>2025 &copy; Hassan Zafar. All rights reserved.</footer>
+      <section class="content-section">
+        <h2>Education</h2>
+        <p>
+          Graduated with a 3.2 out of 4 GPA. Won 2 Hackathons. Took 3 comp sci
+          classes
+        </p>
+        <h4>Courses I took</h4>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Object Oriented Programming</li>
+          <li>Video Game Design</li>
+          <li>Business Information Systems</li>
+        </ul>
+      </section>
+
+      <section class="content-section">
+        <h3>Reviews from my peers</h3>
+        <p>
+          "Hassan is a great team player and always willing to help others." -
+          Tim Phillips
+        </p>
+        <p>
+          "His attention to detail is impressive and he consistently delivers
+          high-quality work." - John Doe
+        </p>
+        <p>
+          "Hassan's problem-solving skills are top-notch and he approaches
+          challenges with a positive attitude." - Alex Smith
+        </p>
+      </section>
+
+      <section class="contact-section">
+        <h2>Contact</h2>
+        <p>
+          Feel Free to Reach out to me by putting some of your contact info in
+        </p>
+        <form>
+          <label for="firstName">Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="John"
+          />
+          <br />
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            placeholder="Doe"
+          />
+          <br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@gmail.com"
+          />
+          <br />
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="123-456-7890"
+          />
+          <br />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br />
+          <h2>Preferred way of being contacted</h2>
+          <label for="contact-email">Email</label>
+          <input type="radio" id="contact-email" name="contact" value="email" />
+          <label for="contact-phone">Phone</label>
+          <input type="radio" id="contact-phone" name="contact" value="phone" />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Hassan Zafar. All rights reserved.</p>
+    </footer>
   </body>
 </html>

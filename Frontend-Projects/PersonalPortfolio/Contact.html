@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="contact">
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Articles.html">Articles</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <main>
+      <form>
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          value="Hassan"
+          required
+        /><br />
+
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          value="Zafar"
+          required
+        /><br />
+
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value="JohnDoe@gmail.com"
+          required
+        /><br />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br />
+
+        <h3>Preffered Way of Contact</h3>
+
+        <label for="emailContact">Email</label>
+        <input
+          type="radio"
+          id="emailContact"
+          name="contactMethod"
+          value="email"
+          checked
+        /><br />
+
+        <label for="phoneContact">Phone</label>
+        <input
+          type="radio"
+          id="phoneContact"
+          name="contactMethod"
+          value="phone"
+        />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
