@@ -1,0 +1,46 @@
+:root {
+  --main-color: black;
+  --secondary-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: serif;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+}
