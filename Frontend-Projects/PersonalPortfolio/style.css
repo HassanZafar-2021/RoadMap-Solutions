@@ -1,73 +1,175 @@
 :root {
-  --main-color: black;
+  --primary-color: #ffffff;
+  --secondary-color: #3333ff;
+  --tertiary-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: serif;
-  background-color: orange;
-  text-align: center;
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  width: 100%;
+  height: 100vh;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-  border: 2px solid black;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  background-color: var(--secondary-color);
   padding: 10px;
-  font-size: 24px;
-  color: var(--main-color);
+  text-align: center;
+  gap: 20px;
 }
-.content-section {
-  border: 2px solid black;
+
+header h1 {
+  color: --var(--primary-color);
+  font-size: 36px;
+
+}
+
+
+
+header ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
+  gap: 20px;
 }
-.content-section {
-  border: 2px solid black;
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
+  gap: 20px;
 }
 
-.content-section h2 {
-  font-size: 24px;
-  color: green;
+nav a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  font-size: 20px;
 }
 
-ul li {
-  color: blue;
-  font-size: 18px;
+nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
-.contact {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(---secoundary-color);
+  text-align: center;
+  text-decoration: underline;
+  line-height: 120px;
+}
+
+.content {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
   border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: lightgray;
+  border-radius: 10px;
+  text-align: center;
+  background-color: yellow;
 }
 
-ul li {
-  padding: 2px;
-  font-size: 18px;
+.content a:hover {
+  color: purple;
+  text-decoration: underline;
 }
+
 
 footer {
-  font-family: cursive;
-  font-size: 18px;
-  margin-bottom: 30px;
+  text-align: center;
+}
+
+#Articles {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: yellow;
+}
+
+#Articles a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+#Projects {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: yellow;
+}
+#Projects a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
