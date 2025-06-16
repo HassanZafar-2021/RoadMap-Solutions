@@ -3,33 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/me.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hassan's Page</title>
   </head>
   <body>
-    <header id="header">
+    <header>
       <h1>Hassan Zafar</h1>
-      <img src="me.jpg" alt="Profile Picture" width="150" height="150" />
-      <p>Frontend Developer</p>
-      <p>HTML only with proper layout, no styling</p>
+      <img src="images/me.jpg" alt="Hassan Zafar" width="50" height="50" />
+
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Articles.html">Articles</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <h2>Software Engineer</h2>
+      <p>html only with proper layout, no styling</p>
+      <hr>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Articles.html">Articles</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section class="content-section">
+      <section id="projects">
         <h2>Projects</h2>
         <ul>
           <li>
-            <a href="https://github.com/HassanZafar-2021/SkyScript"
-              >SkyScript</a
+            <a href="https://github.com/HassanZafar-2021/GameSeek">GameSeek</a>
+          </li>
+          <li>
+            <a href="https://github.com/HassanZafar-2021/AutoTrust"
+              >AutoTrust</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/HassanZafar-2021/AskGemini"
+              >AskGemini</a
             >
           </li>
           <li>
@@ -39,122 +50,68 @@
             >
           </li>
           <li>
-            <a href="https://github.com/HassanZafar-2021/AskGemini"
-              >AskGemini</a
+            <a href="https://github.com/HassanZafar-2021/SkyScript"
+              >SkyScript</a
             >
-          </li>
-          <li>
-            <a href="https://github.com/HassanZafar-2021/Vocal-Vision"
-              >Vocal-Vision</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/HassanZafar-2021/GameSeek">GameSeek</a>
           </li>
         </ul>
       </section>
-
-      <section class="content-section">
+      <hr />
+      <section id="work-experience">
         <h2>Work Experience</h2>
-        <h4>roadmap.sh</h4>
+        <p>roadmap.sh</p>
         <p>Solved all the frontend projects</p>
-        <a href="https://github.com/HassanZafar-2021">Visit my Profile</a>
+        <a href="https://roadmap.sh/account">Visit my profile</a>
       </section>
 
-      <section class="content-section">
+      <section id="work-experience-2">
+        <h2>OpenSource Work</h2>
+        <p>
+          Contributed to 50 opensource projects. Made my own projects with 200
+          GitHub Stars
+        </p>
+        <a href="https://github.com/HassanZafar-2021"
+          >Visit my GitHub Profile</a
+        >
+      </section>
+      <hr />
+
+      <section id="Education">
         <h2>Education</h2>
         <p>
-          Graduated with a 3.2 out of 4 GPA. Won 2 Hackathons. Took 3 comp sci
-          classes
+          Graduated with a 3.2 out of 4 GPA. Won DivHacks and NYUHacks
+          Hackathons
         </p>
-        <h4>Courses I took</h4>
+        <p>Courses I took:</p>
         <ul>
-          <li>Data Structures & Algorithms</li>
-          <li>Object Oriented Programming</li>
-          <li>Video Game Design</li>
-          <li>Business Information Systems</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Computer Networks</li>
+          <li>Operating Systems</li>
+          <li>Database Management Systems</li>
+          <li>Software Engineering</li>
         </ul>
       </section>
 
-      <section class="content-section">
-        <h3>Reviews from my peers</h3>
-        <p>
-          "Hassan is a great team player and always willing to help others." -
-          Tim Phillips
-        </p>
-        <p>
-          "His attention to detail is impressive and he consistently delivers
-          high-quality work." - John Doe
-        </p>
-        <p>
-          "Hassan's problem-solving skills are top-notch and he approaches
-          challenges with a positive attitude." - Alex Smith
-        </p>
-      </section>
+      <hr>
 
-      <section class="contact-section">
-        <h2>Contact</h2>
+      <section id="reviews">
+        <h2>Reviews From my Teachers</h2>
         <p>
-          Feel Free to Reach out to me by putting some of your contact info in
+          "Hassan is a great software engineer. He solved all the frontend
+          projects on roadmap.sh"
         </p>
-        <form>
-          <label for="firstName">Name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            required
-            placeholder="John"
-          />
-          <br />
-          <label for="lastName">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            required
-            placeholder="Doe"
-          />
-          <br />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="example@gmail.com"
-          />
-          <br />
-          <label for="phone">Phone</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-            placeholder="123-456-7890"
-          />
-          <br />
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            required
-          ></textarea>
-          <br />
-          <h2>Preferred way of being contacted</h2>
-          <label for="contact-email">Email</label>
-          <input type="radio" id="contact-email" name="contact" value="email" />
-          <label for="contact-phone">Phone</label>
-          <input type="radio" id="contact-phone" name="contact" value="phone" />
-          <br />
-          <button type="submit">Submit</button>
-        </form>
+        <p>
+          "Hassan is a great open source contributor. He made his own projects
+          with 200 GitHub Stars"
+        </p>
+        <p>
+          "Hassan is a great student. He graduated with a 3.2 out of 4 GPA and
+          won DivHacks and NYUHacks Hackathons"
+        </p>
       </section>
     </main>
     <footer>
-      <p>&copy; 2025 Hassan Zafar. All rights reserved.</p>
+      <p>@ all rights reserved 2025</p>
     </footer>
   </body>
 </html>
